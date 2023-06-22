@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import Contact from "@/components/Contact";
 import EventCard from "@/components/EventCard";
+import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -62,6 +63,7 @@ export default function Home() {
         </div>
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       </section >
+      <Footer/>
 
       <script src="https://use.fontawesome.com/03f8a0ebd4.js" async></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" async></script>
