@@ -3,7 +3,7 @@ import Link from "next/link"
 const Hero = () => {
     return (
         <>
-            <div className="flex justify-center sm:mt-16 bg-blue-900 p-5 md:p-16 md:mt-0 md:pt-8 lg:p-28 lg:mt-0">
+            <div id="hero-section" className="flex justify-center bg-blue-900 p-5 md:p-16 md:mt-0 md:pt-8 lg:p-28 lg:mt-0 pt-20">
                 <div className="flex flex-col justify-center  max-w-7xl  text-white">
                     <h1 className="text-base font-medium tracking-wider ">Welcome to</h1>
                     <span className="underline underline-offset-2 text-white -mt-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
