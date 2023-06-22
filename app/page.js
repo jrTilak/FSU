@@ -15,57 +15,57 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <section class="text-gray-600 body-font">
-        <div class="flex flex-col text-center w-full">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">News and Notices</h1>
+      <section className="text-gray-600 body-font">
+        <div className="flex flex-col text-center w-full">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">News and Notices</h1>
         </div>
-        <div class="container px-5 py-6 mx-auto">
-          <div class="flex flex-wrap -m-4">
+        <div className="container px-5 py-6 mx-auto">
+          <div className="flex flex-wrap -m-4">
             <Card />
             <Card />
             <Card />
           </div>
         </div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       </section >
-      <section class="text-gray-600 body-font">
-        <div class="flex flex-col text-center w-full">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Upcoming Events</h1>
+      <section className="text-gray-600 body-font">
+        <div className="flex flex-col text-center w-full">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Upcoming Events</h1>
         </div>
-        <div class="container px-5 py-6 mx-auto">
-          <div class="flex flex-wrap -m-4">
+        <div className="container px-5 py-6 mx-auto">
+          <div className="flex flex-wrap -m-4">
             <EventCard />
             <EventCard />
             <EventCard />
           </div>
         </div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       </section >
-      <section class="text-gray-600 body-font">
-        <div class="flex flex-col text-center w-full">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Gallery</h1>
+      <section className="text-gray-600 body-font">
+        <div className="flex flex-col text-center w-full">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Gallery</h1>
         </div>
-        <div class="container px-5 py-6 mx-auto">
-          <div class="flex flex-wrap -m-4">
+        <div className="container px-5 py-6 mx-auto">
+          <div className="flex flex-wrap -m-4">
             <Gallery />
           </div>
         </div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       </section >
-      <section class="text-gray-600 body-font">
-        <div class="flex flex-col text-center w-full">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Contact Us</h1>
+      <section className="text-gray-600 body-font">
+        <div className="flex flex-col text-center w-full">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Contact Us</h1>
         </div>
-        <div class="container px-5 py-6 mx-auto">
-          <div class="flex flex-wrap -m-4">
+        <div className="container px-5 py-6 mx-auto">
+          <div className="flex flex-wrap -m-4">
             <Contact/>
           </div>
         </div>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       </section >
       <Footer/>
 
-      <script src="https://use.fontawesome.com/03f8a0ebd4.js" async></script>
+      {/* <script src="https://use.fontawesome.com/03f8a0ebd4.js" async></script> */}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" async></script>
     </>
   )
