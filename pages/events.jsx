@@ -1,7 +1,7 @@
-import Navbar from "@/components/Navbar";
-import Head from "next/head";
+import Navbar from "@/components/Navbar"
+import Head from "next/head"
 
-export default function Home() {
+const events = () => {
   return (
     <>
       <Head>
@@ -11,3 +11,4 @@ export default function Home() {
     </>
   )
 }
+export default events
