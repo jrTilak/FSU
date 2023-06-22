@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import EventCard from "@/components/EventCard";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
@@ -34,6 +35,17 @@ export default function Home() {
             <EventCard />
             <EventCard />
             <EventCard />
+          </div>
+        </div>
+        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+      </section >
+      <section class="text-gray-600 body-font">
+        <div class="flex flex-col text-center w-full">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Gallery</h1>
+        </div>
+        <div class="container px-5 py-6 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <Gallery />
           </div>
         </div>
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
