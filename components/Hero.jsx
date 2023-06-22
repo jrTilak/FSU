@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Hero = () => {
     return (
         <>
@@ -27,10 +29,13 @@ const Hero = () => {
 
                     </div>
                     <div class="flex mt-10 space-x-5">
-                        <button class="bg-white text-blue-600 px-6 py-2 hover:brightness-105 font-semibold">Explore</button>
-                        <button
-                            class="bg-blue-900 text-white border-2 border-white px-6 py-2 hover:brightness-105 font-semibold">Contact Us</button>
-
+                        <Link href="#news">
+                            <button class="bg-white text-blue-600 px-6 py-2 hover:brightness-105 font-semibold">Explore</button>
+                        </Link>
+                        <Link href="/contact">
+                            <button
+                                class="bg-blue-900 text-white border-2 border-white px-6 py-2 hover:brightness-105 font-semibold">Contact Us</button>
+                        </Link>
                     </div>
                 </div>
             </div>
