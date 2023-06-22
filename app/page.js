@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -45,8 +46,10 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center justify-center mt-4">
-          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More news and posts...</button>
-        </div>
+            <Link href="/notices">
+              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More news and posts...</button>
+            </Link>
+          </div>
         </div>
       </section >
       <section className="text-gray-600 body-font">
@@ -56,16 +59,28 @@ export default function Home() {
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            <EventCard
+              title="Thrilled to Announce"
+              desc="Thrilled to announce for the upcoming web design competition. The support have been instrumental in bringing  creative design and visions to reveal. Do participate to showcase your  extraordinary web designs that will redefine digital experiences."
+              date="2080/03/07"
+              time="08:00 PM"
+              img="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/355629282_158882263855424_793956214538350733_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=7mzG_iIQBN8AX-G4eTq&_nc_ht=scontent.fbir1-1.fna&oh=00_AfAXYr42NTXQvm2rfkTY1l0wAYG4-DDxmoKud9GAzLakxg&oe=6498DE19"
+              eventDate="2080/03/07"
+              eventTime="08:00 PM"
+              daysLeft="10"
+            />
+          </div>
+          <div className="flex items-center justify-center mt-4">
+            <Link href="/notices">
+              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More Events...</button>
+            </Link>
           </div>
         </div>
-        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
       </section >
       <section className="text-gray-600 body-font">
         <div className="flex flex-col text-center w-full">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Gallery</h1>
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
