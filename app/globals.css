@@ -6,3 +6,6 @@
 #hero-section{
     min-height: 80vh;
 }
+*{
+    scroll-behavior: smooth;
+}

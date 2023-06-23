@@ -4,6 +4,7 @@ import EventCard from "@/components/EventCard";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
+import MissionAndVision from "@/components/MissionAndVision";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -16,6 +17,16 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
+      <section className="text-gray-600 body-font">
+        <div className="flex flex-col text-center w-full">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Missions and Visions</h1>
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        </div>
+        <div id="news" className="container px-5 py-6 mx-auto">
+          <div className="flex flex-wrap -m-4"></div>
+          <MissionAndVision />
+        </div>
+      </section >
       <section className="text-gray-600 body-font">
         <div className="flex flex-col text-center w-full">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Recent News and Posts</h1>
@@ -47,7 +58,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center mt-4">
             <Link href="/notices">
-              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More news and posts...</button>
+              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More news and posts...</button>
             </Link>
           </div>
         </div>
@@ -72,7 +83,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center mt-4">
             <Link href="/notices">
-              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More Events...</button>
+              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More Events...</button>
             </Link>
           </div>
         </div>
@@ -91,7 +102,7 @@ export default function Home() {
       <section className="text-gray-600 body-font">
         <div className="flex flex-col text-center w-full">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-5">Contact Us</h1>
-        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
