@@ -50,7 +50,7 @@ const Contact = () => {
     };
     return (
         < section className="text-gray-600 body-font relative" >
-            <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap justify-center">
+            <div className="container px-5 pb-24 mx-auto flex sm:flex-nowrap flex-wrap ">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe width="100%" height="100%" className="absolute inset-0" frameBorder="0" title="map" marginHeight="0" marginWidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7122.828432168656!2d87.2915979!3d26.7949365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b606ce89f9%3A0x7423e72f8e139e05!2sPurwanchal%20Engineering%20Campus(ERC)!5e0!3m2!1sen!2snp!4v1687449683358!5m2!1sen!2snp" style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}></iframe>
                     <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">

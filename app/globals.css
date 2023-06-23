@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Tinos&display=swap');
 
-#hero-section{
+
+
+#hero-section {
     min-height: 80vh;
 }
-*{
+
+
+* {
     scroll-behavior: smooth;
+    font-family: 'Tinos', serif;
+
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Garamond', serif;
 }
