@@ -10,6 +10,7 @@ import Head from "next/head";
 import Link from "next/link";
 import missions from "../assets/missions.json";
 import posts from "../assets/posts.json";
+import Alert from "@/components/Alert";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         />
       </Head>
       <Navbar />
+      <Alert />
       <Hero />
       <section className="text-gray-600 body-font">
         <div className="flex flex-col text-center w-full">
