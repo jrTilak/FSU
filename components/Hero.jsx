@@ -3,16 +3,19 @@ import Link from "next/link"
 const Hero = () => {
     return (
         <>
-            <div id="hero-section" className="flex justify-center bg-blue-900 p-5 md:p-16 md:mt-0 md:pt-8  pt-20">
-                <div className="flex flex-col justify-center  max-w-7xl  text-white items-center">
+            <div id="hero-section"
+                className="flex justify-center bg-[url('../public/allMembers.jpg')] bg-no-repeat bg-center bg-cover p-5 md:p-16 mt-16 md:pt-8 bg-neutral-800/70 bg-blend-multiply"
+            >
+                <div className="flex flex-col justify-center  max-w-7xl  text-white items-center z-10">
                     <h1 className="text-base font-medium tracking-wider ">Welcome to</h1>
                     <span className="underline underline-offset-2 text-white -mt-3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         &nbsp; </span>
                     <div className="flex flex-col text-white mt-5 items-center">
-                        <h1 className="text-4xl md:text-[50px] font-semibold">स्वतन्त्र विद्यार्थी युनियन,</h1>
-                        <p className="text-xl mt-2 md:mt-4 tracking-wide">इ.अ.सं, पूर्वाञ्चल क्याम्पस धरान</p>
+                        <h1 className="text-3xl	 md:text-[50px] font-semibold">स्वतन्त्र विद्यार्थी युनियन,</h1>
+                        <p className="text-base mt-2 md:mt-4 tracking-wide">इ.अ.सं, पूर्वाञ्चल क्याम्पस धरान</p>
                     </div>
-                    <p className="mt-4 text-sm tracking-wide leading-7">A Free Student Union (FSU) is a student-led organization operating within educational institutions, such as colleges and universities, with the primary purpose of advocating for the interests, rights, and welfare of students. Serving as the official representative body of the student community, FSUs act as a vital intermediary between students and the institution's administration. Through their proactive engagement, FSUs champion student concerns, demands, and aspirations, striving to create an environment conducive to holistic student development. FSUs fulfill their mandate through various means, including advocacy and activism, welfare support, policy development, student services, leadership development, and external engagement. By organizing protests, campaigns, and events, FSUs actively raise awareness and fight for issues such as affordable education, social justice, and freedom of expression. They also address students' welfare needs, offering support services and ensuring access to essential resources. Moreover, FSUs contribute to policy discussions, providing valuable input on matters such as curriculum, examination systems, and campus regulations. By organizing extracurricular activities and cultural events, FSUs foster a vibrant student community and promote a well-rounded educational experience. Through these initiatives, FSUs enable students to develop leadership skills, teamwork, and organizational abilities, empowering them to actively participate in decision-making processes. Additionally, FSUs often collaborate with other student organizations, NGOs, and community groups to address broader societal issues, reinforcing a network of student activism and solidarity. Overall, FSUs play a vital role in safeguarding student rights, advocating for their welfare, and promoting an inclusive and empowering educational environment.</p>
+                    <p className="mt-4 text-sm tracking-wide md:leading-7  lg:hidden lg:text-base">Free Student Union (FSU) is a student-led organization operating within IOE Purwanchal Campus Dharan, with the primary purpose of advocating for the interests, rights, and welfare of students. Serving as the official representative body of the student community, we act as a vital intermediary between students and the institution&apos;s administration. By organizing campaigns, and events, we actively raise awareness and fight for issues such as affordable education, social justice, and freedom of expression for students. Overall, we play a vital role in safeguarding student rights, advocating for their welfare, and promoting an inclusive and empowering educational environment.</p>
+                    <p className="mt-4 text-sm tracking-wide md:leading-7 hidden lg:block lg:text-base">Free Student Union (FSU) is a student-led organization operating within IOE Purwanchal Campus Dharan, with the primary purpose of advocating for the interests, rights, and welfare of students. Serving as the official representative body of the student community, we act as a vital intermediary between students and the institution&apos;s administration. By organizing campaigns, and events, we actively raise awareness and fight for issues such as affordable education, social justice, and freedom of expression for students. We also address student&apos;s welfare needs, offering support services and ensuring access to essential resources. By organizing extracurricular activities and cultural events, we foster a vibrant student community and promote a well-rounded educational experience. Through these initiatives, we enable students to develop leadership skills, teamwork, and organizational abilities, empowering them to actively participate in decision-making processes. Additionally, we often collaborate with other student organizations to oragnzie different programs for the welfare of students. Overall, we play a vital role in safeguarding student rights, advocating for their welfare, and promoting an inclusive and empowering educational environment.</p>
                     <div className="space-x-3 md:mt-4">
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start ">
                             <Link href="https://www.facebook.com/fsu.ioeerc" className="text-blue-700 bg-white rounded-full p-2 hover:bg-blue-700 hover:text-white">
@@ -41,6 +44,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
