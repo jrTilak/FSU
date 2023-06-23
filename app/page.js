@@ -8,6 +8,7 @@ import MissionAndVision from "@/components/MissionAndVision";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Link from "next/link";
+import missions from "../assets/missions.json";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         </div>
         <div id="news" className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4"></div>
-          <MissionAndVision />
+          <MissionAndVision missions={missions} />
         </div>
       </section >
       <section className="text-gray-600 body-font">
