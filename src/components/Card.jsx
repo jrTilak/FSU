@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const { default: Link } = require("next/link")
 
-const Card = ({ title, desc, date, time, img }) => {
+const Card = ({ title, desc, date, time, img, slug }) => {
     return (
         <div className="p-4 md:w-1/3">
             <div
@@ -26,7 +26,7 @@ const Card = ({ title, desc, date, time, img }) => {
                     </p>
                     <div className="flex items-center flex-wrap ">
                         <Link
-                            href="#"
+                            href={`/notices/${slug}`}
                             className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
                         >
                             Read More
