@@ -9,20 +9,14 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Link from "next/link";
 import missions from "../assets/missions.json";
+import events from "../assets/events.json";
 import posts from "../assets/posts.json";
 import Alert from "@/components/Alert";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"
-          rel="stylesheet"
-        />
-      </Head>
-      <Navbar />
-      <Alert />
+      {/* <Alert /> */}
       <Hero />
       <section className="text-gray-600 body-font">
         <div className="flex flex-col text-center w-full">
@@ -104,22 +98,44 @@ export default function Home() {
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <EventCard
-              title="Thrilled to Announce"
-              desc="Thrilled to announce for the upcoming web design competition. The support have been instrumental in bringing  creative design and visions to reveal. Do participate to showcase your  extraordinary web designs that will redefine digital experiences."
-              date="2080/03/07"
-              time="08:00 PM"
-              img="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/355629282_158882263855424_793956214538350733_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=7mzG_iIQBN8AX-G4eTq&_nc_ht=scontent.fbir1-1.fna&oh=00_AfAXYr42NTXQvm2rfkTY1l0wAYG4-DDxmoKud9GAzLakxg&oe=6498DE19"
-              eventDate="2080/03/07"
-              eventTime="08:00 PM"
-              daysLeft="10"
-            />
+            {
+              events.map((event, index) => {
+                if (index < 3) {
+                  return (
+                    <EventCard
+                      key={index}
+                      title={event.title}
+                      desc={event.desc}
+                      date={event.date}
+                      time={event.time}
+                      img={event.img}
+                      eventDate={event.eventDate}
+                      eventTime={event.eventTime}
+                    />
+                  )
+                }
+              })
+            }
           </div>
-          <div className="flex items-center justify-center mt-4">
-            <Link href="/notices">
-              <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">More Events...</button>
-            </Link>
-          </div>
+          {
+            events.length > 3
+              ?
+              <div className="flex items-center justify-center mt-4">
+                <Link href="/notices">
+                  <button
+                    type="button"
+                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >Explore more events...</button>
+                </Link>
+              </div>
+              :
+              <div class="inline-flex items-center justify-center w-full">
+                <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                <span
+                  class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
+                >No more events.</span>
+              </div>
+          }
         </div>
       </section >
       <section className="text-gray-600 body-font">
@@ -144,9 +160,6 @@ export default function Home() {
           </div>
         </div>
       </section >
-      <Footer />
-      <script src="https://kit.fontawesome.com/910ed0a25b.js" crossorigin="anonymous" async></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" async></script>
     </>
   )
 }

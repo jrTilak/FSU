@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import './globals.css' // Assuming this is the path to your global styles
+import './globals.css' 
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -17,11 +17,12 @@ export default function RootLayout({ children }) {
       <Head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
       </Head>
-      <body className={inter.className}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <script src="https://kit.fontawesome.com/910ed0a25b.js" crossOrigin="anonymous" async></script>
+      <body className={`${inter.className} app`}>
+        <main>
+          <Navbar />
+          {children}
+          <Footer />
+        </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" async></script>
       </body>
     </>
