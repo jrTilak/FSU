@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const { default: Link } = require("next/link")
 
 const Card = ({ title, desc, date, time, img }) => {
@@ -6,11 +8,14 @@ const Card = ({ title, desc, date, time, img }) => {
             <div
                 className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             >
-                <img
+                <div className="imageContainer relative lg:h-48 md:h-36 w-full object-cover object-center">
+                <Image
                     className="lg:h-48 md:h-36 w-full object-cover object-center"
                     src={img}
+                    fill="cover"
                     alt={title}
                 />
+                </div>
                 <div className="p-6">
                     <h1
                         className="title-font text-lg font-medium text-gray-900 mb-3"

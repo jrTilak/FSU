@@ -8,6 +8,7 @@ import Link from "next/link";
 import missions from "../../public/json/missions.json";
 import events from "../../public/json/events.json";
 import posts from "../../public/json/posts.json";
+import gallery from "../../public/json/gallery.json";
 
 export default function Home() {
   return (
@@ -73,10 +74,10 @@ export default function Home() {
                 </Link>
               </div>
               :
-              <div class="inline-flex items-center justify-center w-full">
-                <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+              <div className="inline-flex items-center justify-center w-full">
+                <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <span
-                  class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
+                  className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
                 >No more posts.</span>
               </div>
           }
@@ -124,10 +125,10 @@ export default function Home() {
                 </Link>
               </div>
               :
-              <div class="inline-flex items-center justify-center w-full">
-                <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+              <div className="inline-flex items-center justify-center w-full">
+                <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <span
-                  class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
+                  className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
                 >No more events.</span>
               </div>
           }
@@ -140,7 +141,7 @@ export default function Home() {
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <Gallery />
+            <Gallery gallery={gallery} />
           </div>
         </div>
       </section >
