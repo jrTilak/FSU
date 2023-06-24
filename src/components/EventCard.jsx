@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const EventCard = ({ title, desc, img, date, time, eventDate, eventTime }) => {
     const getEventStatus = (date, time, event_date, event_time) => {
         // Convert date and time strings to Date objects
@@ -36,16 +38,19 @@ const EventCard = ({ title, desc, img, date, time, eventDate, eventTime }) => {
     return (
         <div className="p-4 md:w-1/3">
             <span
-                class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300 rounded-tl-none rounded-br-none rounded-tr-lg rounder-bl-lg absolute"
+                className="bg-red-100 text-red-800 text-xs z-20 font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300 rounded-tl-none rounded-br-none rounded-tr-lg rounder-bl-lg absolute"
             >{status}</span>
             <div
                 className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             >
-                <img
+                <div className="imageContainer relative lg:h-48 md:h-36 w-full object-cover object-center">
+                <Image
                     className="lg:h-48 md:h-36 w-full object-cover object-center"
                     src={img}
-                    alt="blog"
+                    fill="cover"
+                    alt={title}
                 />
+                </div>
                 <div className="p-6">
                     <h2
                         className="tracking-widest text-xs title-font font-medium text-rose-600 mb-1 font-semibold"

@@ -1,22 +1,18 @@
 import Card from "@/components/Card";
 import Contact from "@/components/Contact";
 import EventCard from "@/components/EventCard";
-import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import MissionAndVision from "@/components/MissionAndVision";
-import Navbar from "@/components/Navbar";
-import Head from "next/head";
 import Link from "next/link";
-import missions from "../assets/missions.json";
-import events from "../assets/events.json";
-import posts from "../assets/posts.json";
-import Alert from "@/components/Alert";
+import missions from "../../public/json/missions.json";
+import events from "../../public/json/events.json";
+import posts from "../../public/json/posts.json";
+import gallery from "../../public/json/gallery.json";
 
 export default function Home() {
   return (
     <>
-      {/* <Alert /> */}
       <Hero />
       <section className="text-gray-600 body-font">
         <div className="flex flex-col text-center w-full">
@@ -78,10 +74,10 @@ export default function Home() {
                 </Link>
               </div>
               :
-              <div class="inline-flex items-center justify-center w-full">
-                <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+              <div className="inline-flex items-center justify-center w-full">
+                <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <span
-                  class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
+                  className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
                 >No more posts.</span>
               </div>
           }
@@ -129,10 +125,10 @@ export default function Home() {
                 </Link>
               </div>
               :
-              <div class="inline-flex items-center justify-center w-full">
-                <hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+              <div className="inline-flex items-center justify-center w-full">
+                <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <span
-                  class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
+                  className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2"
                 >No more events.</span>
               </div>
           }
@@ -145,7 +141,7 @@ export default function Home() {
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <Gallery />
+            <Gallery gallery={gallery} />
           </div>
         </div>
       </section >

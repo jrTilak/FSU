@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <>
             <div id="hero-section"
-                className="flex justify-center bg-[url('../public/allMembers.jpg')] bg-no-repeat bg-center bg-cover p-5 md:p-16 mt-16 md:pt-8 bg-neutral-800/60 bg-blend-multiply"
+                className="flex justify-center bg-[url('../../public/images/allMembers.jpg')] bg-no-repeat bg-center bg-cover p-5 md:p-16 mt-16 md:pt-8 bg-neutral-800/60 bg-blend-multiply"
             >
                 <div className="flex flex-col justify-between  max-w-7xl  text-white items-center z-10">
                     <div className="flex flex-col items-center">
@@ -16,8 +16,6 @@ const Hero = () => {
                             <p className="text-base mt-2 md:mt-4 tracking-wide">इ.अ.सं, पूर्वाञ्चल क्याम्पस धरान</p>
                         </div>
                     </div>
-                    {/* <p className="mt-4 text-sm tracking-wide md:leading-7  lg:hidden lg:text-base">Free Student Union (FSU) is a student-led organization operating within IOE Purwanchal Campus Dharan, with the primary purpose of advocating for the interests, rights, and welfare of students. Serving as the official representative body of the student community, we act as a vital intermediary between students and the institution&apos;s administration. By organizing campaigns, and events, we actively raise awareness and fight for issues such as affordable education, social justice, and freedom of expression for students. Overall, we play a vital role in safeguarding student rights, advocating for their welfare, and promoting an inclusive and empowering educational environment.</p>
-                    <p className="mt-4 text-sm tracking-wide md:leading-7 hidden lg:block lg:text-base">Free Student Union (FSU) is a student-led organization operating within IOE Purwanchal Campus Dharan, with the primary purpose of advocating for the interests, rights, and welfare of students. Serving as the official representative body of the student community, we act as a vital intermediary between students and the institution&apos;s administration. By organizing campaigns, and events, we actively raise awareness and fight for issues such as affordable education, social justice, and freedom of expression for students. We also address student&apos;s welfare needs, offering support services and ensuring access to essential resources. By organizing extracurricular activities and cultural events, we foster a vibrant student community and promote a well-rounded educational experience. Through these initiatives, we enable students to develop leadership skills, teamwork, and organizational abilities, empowering them to actively participate in decision-making processes. Additionally, we often collaborate with other student organizations to oragnzie different programs for the welfare of students. Overall, we play a vital role in safeguarding student rights, advocating for their welfare, and promoting an inclusive and empowering educational environment.</p> */}
                     <div className="flex items-center flex-col">
                         <div className="space-x-3 md:mt-4">
                             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start ">
