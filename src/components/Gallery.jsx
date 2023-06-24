@@ -1,11 +1,11 @@
 "use client"
-const Gallery = ({ gallery }) => {
+const Gallery = ({ gallery, limit }) => {
     let img1 = [];
     let img2 = [];
     let img3 = [];
     let img4 = [];
     gallery.map((item, index) => {
-        if (index < 12) {
+        if (index < limit) {
             if (index % 4 === 0) {
                 img1.push(item);
             } else if (index % 4 === 1) {
