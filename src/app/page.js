@@ -141,7 +141,7 @@ export default function Home() {
         </div>
         <div className="container px-5 py-6 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <Gallery gallery={gallery} />
+            <Gallery gallery={gallery} limit={12} />
           </div>
         </div>
       </section >
