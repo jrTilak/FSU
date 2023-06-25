@@ -8,9 +8,9 @@ const Card = ({ title, desc, date, time, img, slug }) => {
             <div
                 className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             >
-                <div className="imageContainer relative lg:h-48 md:h-36 w-full object-cover object-center">
+                <div className="imageContainer relative lg:h-48 md:h-36 h-48 w-full object-cover object-center">
                 <Image
-                    className="lg:h-48 md:h-36 w-full object-cover object-center"
+                    className="object-cover object-center"
                     src={img}
                     fill="cover"
                     alt={title}

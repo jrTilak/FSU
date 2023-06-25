@@ -1,8 +1,9 @@
+import MainGallery from '@/components/Gallery/MainGallery'
 import React from 'react'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <MainGallery/>
   )
 }
 

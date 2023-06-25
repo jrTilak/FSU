@@ -1,1 +1,3 @@
 event status navbar vanda dherai z-index xa
+gallery ko width set garne
+contact ma nbr change garni

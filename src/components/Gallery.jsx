@@ -1,78 +1,64 @@
-"use client"
-const Gallery = ({ gallery, limit }) => {
-    let img1 = [];
-    let img2 = [];
-    let img3 = [];
-    let img4 = [];
-    gallery.map((item, index) => {
-        if (index < limit) {
-            if (index % 4 === 0) {
-                img1.push(item);
-            } else if (index % 4 === 1) {
-                img2.push(item);
-            } else if (index % 4 === 2) {
-                img3.push(item);
-            } else if (index % 4 === 3) {
-                img4.push(item);
-            }
-        }
-    })
-    console.log(img1, img2, img3, img4);
+import Image from "next/image";
+
+const Gallery = ({ gallery }) => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="grid gap-4">
-                {
-                    img1.map((item) => {
-                        return (
-                            <div
-                                key={item}
-                            >
-                                <img className="h-auto max-w-full rounded-lg" src={item} alt="" />
-                            </div>
-                        )
-                    })
-                }
+        <div
+            className="flex flex-col lg:flex-row space-x-2 space-y-3 md:space-x-6   w-full items-center justify-center ">
+            <div className=" relative lg:w-40 w-64 h-40  overflow-hidden rounded-xl ">
+                <Image
+                    fill="true"
+                    src={gallery[0]}
+                    alt=""
+                    className="absolute object-cover" />
             </div>
-            <div className="grid gap-4">
-                {
-                    img2.map((item) => {
-                        return (
-                            <div
-                                key={item}
-                            >
-                                <img className="h-auto max-w-full rounded-lg" src={item} alt="" />
-                            </div>
-                        )
-                    })
-                }
+            <div className="flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center">
+                <div className=" relative w-32 lg:w-40 h-32  overflow-hidden rounded-xl ">
+                    <Image
+                        fill="true"
+                        src={gallery[1]}
+                        alt=""
+                        className="absolute object-cover " />
+                </div>
+                <div className=" relative w-32 lg:w-40 h-48  overflow-hidden rounded-xl ">
+                    <Image
+                        fill="true"
+                        src={gallery[2]}
+                        alt=""
+                        className="absolute object-cover " />
+                </div>
             </div>
-            <div className="grid gap-4">
-                {
-                    img3.map((item) => {
-                        return (
-                            <div
-                                key={item}
-                            >
-                                <img className="h-auto max-w-full rounded-lg" src={item} alt="" />
-                            </div>
-                        )
-                    })
-                }
+            <div className=" relative lg:w-60 w-64 h-96  overflow-hidden rounded-xl ">
+                <Image
+                    fill="true"
+                    src={gallery[3]}
+                    alt=""
+                    className="absolute object-cover " />
             </div>
-            <div className="grid gap-4">
-                {
-                    img4.map((item) => {
-                        return (
-                            <div
-                                key={item}
-                            >
-                                <img className="h-auto max-w-full rounded-lg" src={item} alt="" />
-                            </div>
-                        )
-                    })
-                }
+            <div className="flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center ">
+                <div className=" relative w-32 lg:w-40 h-48  overflow-hidden rounded-xl ">
+                    <Image
+                        fill="true"
+                        src={gallery[4]}
+                        alt=""
+                        className="absolute object-cover " />
+                </div>
+                <div className=" relative w-32 lg:w-40 h-32  overflow-hidden rounded-xl ">
+                    <Image
+                        fill="true"
+                        src={gallery[5]}
+                        alt=""
+                        className="absolute object-cover " />
+                </div>
+            </div>
+            <div className=" relative lg:w-40 w-64 h-40  overflow-hidden rounded-xl ">
+                <Image
+                    fill="true "
+                    className="absolute object-cover "
+                    src={gallery[6]}
+                    alt="" />
             </div>
         </div>
+
     )
 }
 export default Gallery

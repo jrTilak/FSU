@@ -24,7 +24,7 @@ const About = () => {
                     headingCss="text-end"
                 />
             </div>
-            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 mx-6"></hr>
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 mx-6"></hr>
             <MemberDetail details={members} />
         </>
     )
