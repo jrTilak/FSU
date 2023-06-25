@@ -3,15 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 
 
-// {
-//     "name": "Nabin Shrestha",
-//     "contact": [
-//         "9804368740"
-//     ],
-//     "email": "075bag017@ioepc.edu.np",
-//     "img": "/members/NabinShrestha.jpg"
-// },
-
 const MemberDetail = ({ details }) => {
     return (
         <section className="text-gray-600 body-font">
@@ -33,7 +24,7 @@ const MemberDetail = ({ details }) => {
                         <div className="flex flex-col items-center gap-2 ">
                             <h1 className="text-gray-900 title-font font-semibold text-2xl">Nabin Shrestha</h1>
                             <p className="text-gray-500 text-lg">President</p>
-                            <span className="min-w-[50%] flex sm:mt-0 flex items-center justify-evenly gap-4">
+                            <span className="min-w-[50%] sm:mt-0 flex items-center justify-evenly gap-4">
                                 <Link href="/" className="text-gray-500 pr-2">
                                     <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -58,7 +49,7 @@ const MemberDetail = ({ details }) => {
                         {details.map((member) => {
                             return (
                                 <div className="p-2 lg:w-1/3 md:w-1/2 w-full relative" key={member.name}>
-                                    <span className="inline-flex sm:ml-auto sm:mt-0 flex flex-col absolute right-6 top-2 h-[80%] justify-evenly">
+                                    <span className=" sm:ml-auto sm:mt-0 flex flex-col absolute right-6 top-2 h-[80%] justify-evenly">
                                         {member.facebook &&
                                             <Link href={member.facebook} className="text-gray-500 pr-2">
                                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">

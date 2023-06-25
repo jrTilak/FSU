@@ -1,7 +1,6 @@
 import Card from '@/components/Card'
 import React from 'react'
 import posts from "../../../../public/json/posts.json"
-import Link from 'next/link'
 
 const Notices = () => {
   return (

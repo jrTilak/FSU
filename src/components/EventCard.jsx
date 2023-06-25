@@ -54,7 +54,7 @@ const EventCard = ({ title, desc, img, date, time, eventDate, eventTime, slug })
                 </div>
                 <div className="p-6">
                     <h2
-                        className="tracking-widest text-xs title-font font-medium text-rose-600 mb-1 font-semibold"
+                        className="tracking-widest text-xs title-font text-rose-600 mb-1 font-semibold"
                     >
                         {status === "completed" ? "Happened" : "Happening"} On: {eventDate.slice(5)} {eventTime} {daysLeft && `| ${daysLeft} days Left`}
                     </h2>
