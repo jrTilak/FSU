@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Tinos&display=swap');
 
 
-
+body{
+    min-height: 100vh;
+}
 #hero-section {
     min-height: 80vh;
 }
