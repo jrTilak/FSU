@@ -1,105 +1,155 @@
 "use client"
-import Image from "next/image"
-import Link from "next/link"
+import Image from 'next/image';
 import logo from '../app/favicon.ico'
-
+import Link from 'next/link';
 const Navbar = () => {
-    const handleNavClick = (e) => {
-        const navLinks = document.querySelectorAll('#nav-links li a')
-        navLinks.forEach((link) => {
-            link.classList.remove("block", "py-2", "pl-3", "pr-4", "text-white", "bg-blue-700", "rounded", "md:bg-transparent", "md:text-blue-700", "md:p-0", "md:dark:text-blue-500")
-            e.target.classList.add("block", "py-2", "pl-3", "pr-4", "text-gray-900", "rounded", "hover:bg-gray-100", "md:hover:bg-transparent", "md:hover:text-blue-700", "md:p-0", "md:dark:hover:text-blue-500", "dark:text-white", "dark:hover:bg-gray-700", "dark:hover:text-white", "md:dark:hover:bg-transparent", "dark:border-gray-700"
-            )
-        })
-        if (e.target.innerHTML !== "Queries") {
-            e.target.classList.add("block", "py-2", "pl-3", "pr-4", "text-white", "bg-blue-700", "rounded", "md:bg-transparent", "md:text-blue-700", "md:p-0", "md:dark:text-blue-500")
-        }
-    }
-    return (
-        <>
-        <nav
-            className=" bg-gray-900 fixed w-full z-20 top-0 left-0 border-b  border-gray-600 ">
-            <div
-                className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-                <Link
-                    href="./"
-                    className="flex items-center"
-                >
-                    <Image
-                        src={logo} className="h-12 mr-3 rounded-full"
-                        alt="fsu logo"
-                        width={50}
-                    />
-                    <span
-                        className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                        FSU
-                    </span>
-                </Link>
-                <div
-                    className="flex md:order-2">
-                    <Link href="/ask">
-                        <button
-                            onClick={handleNavClick}
-                            type="button"
-                            className="text-white   focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-                        >
-                            Ask?
-                        </button>
-                    </Link>
-                    <button
-                        data-collapse-toggle="navbar-sticky"
-                        type="button"
-                        className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky"
-                        aria-expanded="false"
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
-                    </button>
-                </div>
-                <div
-                    className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                    id="navbar-sticky"
-                >
-                    <ul
-                        id="nav-links"
-                        className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-                    >
-                        <li
-                            onClick={handleNavClick}
-                        >
-                            <Link href="/" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</Link>
-                        </li>
-                        <li
-                            onClick={handleNavClick}
-                        >
-                            <Link href="/about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</Link>
-                        </li>
 
-                        <li
-                            onClick={handleNavClick}
+    const toggleNavbar = () => {
+        const menu = document.querySelector(".mobile-menu");
+        menu.classList.toggle("hidden");
+    }
+ 
+
+    return (
+        <nav class="bg-gray-900 fixed w-full z-50 top-0 left-0 border-b  border-gray-600 ">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div>
+                        <Link
+                            href="./"
+                            className="flex items-center"
                         >
-                            <Link href="/notices" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Notices</Link>
-                        </li>
-                        <li
-                            onClick={handleNavClick}
+                            <Image
+                                src={logo} className="h-12 mr-3 rounded-full"
+                                alt="fsu logo"
+                                width={50}
+                            />
+                            <span
+                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+                                FSU
+                            </span>
+                        </Link>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1 gap-8">
+                        <Link href="/"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                         >
-                            <Link href="/events" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Events</Link>
-                        </li>
-                        <li
-                            onClick={handleNavClick}
+                            Home
+                        </Link>
+                        <Link
+                            href="/about"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                         >
-                            <Link href="/gallery" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</Link>
-                        </li>
-                                                <li
-                            onClick={handleNavClick}
+                            About
+                        </Link>
+                        <Link
+                            href="/notices"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                         >
-                            <Link href="/contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
-                        </li>
-                    </ul>
+                            Events
+                        </Link>
+                        <Link
+                            href="/notices"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Gallery
+                        </Link>
+                        <Link
+                            href="/notices"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Contact
+                        </Link>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <Link href="/ask">
+                            <button
+                                type="button"
+                                className="text-white   focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+                            >
+                                Ask?
+                            </button>
+                        </Link>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button onClick={toggleNavbar} class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                                x-show="!showMenu"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li
+                        class="active">
+                        <Link href="/"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/about"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/notices"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Notices
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/events"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Events
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/gallery"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Gallery
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/contact"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Contact Us
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/ask"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        >
+                            Ask?
+                        </Link>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        </>
-    )
-}
-export default Navbar
+    );
+};
+
+export default Navbar;
