@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import missions from "../../public/json/missions.json";
 import events from "../../public/json/events.json";
-import posts from "../../public/json/posts.json";
+import notices from "../../public/json/notices.json";
 import gallery from "../../public/json/gallery.json";
 
 import React from 'react'
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <HomeContent
         missions={missions}
-        posts={posts}
+        notices={notices}
         events={events}
         gallery={gallery}
       />

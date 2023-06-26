@@ -16,10 +16,10 @@ const Events = () => {
       <div className="container px-5 py-6 mx-auto">
         <div className="flex flex-wrap -m-4">
           {
-            events.map((event, index) => {
+            events.map((event) => {
               return (
                 <EventCard
-                  key={index}
+                  key={event.id}
                   title={event.title}
                   desc={event.desc}
                   date={event.date}
@@ -27,7 +27,7 @@ const Events = () => {
                   img={event.img}
                   eventDate={event.eventDate}
                   eventTime={event.eventTime}
-                  slug={index}
+                  slug={event.id}
                 />
               )
             }

@@ -9,12 +9,12 @@ const Card = ({ title, desc, date, time, img, slug }) => {
                 className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             >
                 <div className="imageContainer relative lg:h-48 md:h-36 h-48 w-full object-cover object-center">
-                <Image
-                    className="object-cover object-center"
-                    src={img}
-                    fill="cover"
-                    alt={title}
-                />
+                    <Image
+                        className="object-cover object-center"
+                        src={img}
+                        fill="cover"
+                        alt={title}
+                    />
                 </div>
                 <div className="p-6">
                     <h1
@@ -44,7 +44,7 @@ const Card = ({ title, desc, date, time, img, slug }) => {
                         </Link>
                         <span
                             className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                            {date.slice(5)}
+                            {date}
                         </span>
                         <span
                             className="text-gray-400 inline-flex items-center leading-none text-sm">

@@ -10,13 +10,13 @@ import { ButtonOrNot } from './ButtonOrNot'
 
 const HomeContent = ({
   missions,
-  posts,
+  notices,
   events,
   gallery
 }) => {
   return (
     <>
-    <ComponentSection title="Missions and Visions">
+      <ComponentSection title="Missions and Visions">
         <div
           id="news"
           className="container px-5 py-6 mx-auto">
@@ -26,7 +26,7 @@ const HomeContent = ({
           />
         </div>
       </ComponentSection>
-      <ComponentSection title="Recent News and Posts">
+      <ComponentSection title="Recent Notices and Posts">
         <div
           id="news"
           className="container px-5 py-6 mx-auto"
@@ -34,17 +34,17 @@ const HomeContent = ({
           <div
             className="flex flex-wrap -m-4"
           >
-            {posts.map((post, index) => {
+            {notices.map((notice, index) => {
               if (index < 3) {
                 return (
                   <Card
-                    key={index}
-                    title={post.title}
-                    desc={post.desc}
-                    date={post.date}
-                    time={post.time}
-                    img={post.img}
-                    slug={index}
+                    key={notice.id}
+                    title={notice.title}
+                    desc={notice.desc}
+                    date={notice.date}
+                    time={notice.time}
+                    img={notice.img}
+                    slug={notice.id}
                   />
                 )
               }
@@ -52,7 +52,7 @@ const HomeContent = ({
             })}
           </div>
           <ButtonOrNot
-            len={posts.length}
+            len={notices.length}
             btnText="More news and posts..."
             altText="No more posts"
           />
