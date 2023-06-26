@@ -1,6 +1,6 @@
 import Card from '@/components/Card'
 import React from 'react'
-import posts from "../../../../public/json/posts.json"
+import notices from "../../../../public/json/notices.json"
 
 const Notices = () => {
   return (
@@ -21,17 +21,17 @@ const Notices = () => {
           <div
             className="flex flex-wrap -m-4"
           >
-            {posts.map((post, index) => {
+            {notices.map((notice, index) => {
               return (
-                  <Card
-                    key={index}
-                    title={post.title}
-                    desc={post.desc}
-                    date={post.date}
-                    time={post.time}
-                    img={post.img}
-                    slug={index}
-                  />
+                <Card
+                  key={notice.id}
+                  title={notice.title}
+                  desc={notice.desc}
+                  date={notice.date}
+                  time={notice.time}
+                  img={notice.img}
+                  slug={notice.id}
+                />
               )
             }
             )}

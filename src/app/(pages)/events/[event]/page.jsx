@@ -1,9 +1,20 @@
+"use client"
 import React from 'react'
+import events from "../../../../../public/json/events.json";
+import Post from '@/components/Post';
+import { usePathname } from 'next/navigation';
 
-const Event = () => {
+const Events = () => {
+  let path = usePathname()
+  const regex = /\/(notices|events)\/([^/]+)/;
+  const getLinkId = regex.exec(path);
   return (
-    <div>Event</div>
+    <Post
+      type={getLinkId[1]}
+      id={getLinkId[2]}
+      arr={events}
+    />
   )
 }
 
-export default Event
+export default Events
