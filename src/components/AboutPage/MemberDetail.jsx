@@ -9,7 +9,7 @@ const MemberDetail = ({ details }) => {
             <div className="container px-5 py-4 mx-auto">
                 <div className="flex flex-col text-center w-full">
                     <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900 underline underline-offset-4">FSU Community</h1>
-                    
+
                 </div>
                 <div className='flex items-center flex-col'>
                     <div className='mb-6'>
@@ -50,8 +50,8 @@ const MemberDetail = ({ details }) => {
                             return (
                                 <div className="p-2 lg:w-1/3 md:w-1/2 w-full relative" key={member.name}>
                                     <span className=" sm:ml-auto sm:mt-0 flex flex-col absolute right-6 top-2 h-[80%] justify-evenly">
-                                        {member.facebook &&
-                                            <Link href={member.facebook} className="text-gray-500 pr-2">
+                                        {member.fbLink &&
+                                            <Link href={member.fbLink} className="text-gray-500 pr-2">
                                                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                                 </svg>
