@@ -1,45 +1,58 @@
-import React from 'react'
+"use client"
+import { useEffect } from "react"
+import { useGlobalContext } from "./../app/GlobalContext"
+import "./alert.css"
 
 const Alert = () => {
+    const { showAlert, setShowAlert, alertType, alertMessage, alertIconType, setAlertIconType } = useGlobalContext()
+    useEffect(() => {
+        if (showAlert) {
+            document.querySelector(".progress").classList.add("active");
+            let alertComp = document.querySelector(".alert")
+            alertComp.classList.add("active");
+            alertComp.classList.remove("warning");
+            alertComp.classList.remove("error");
+            alertComp.classList.remove("success");
+
+            switch (alertType) {
+                case "success":
+                    alertComp.classList.add("success");
+                    setAlertIconType("bxs-check-circle")
+                    break;
+                case "warning":
+                    alertComp.classList.add("warning");
+                    setAlertIconType("bxs-info-circle")
+                    break;
+                case "error":
+                    alertComp.classList.add("error");
+                    setAlertIconType("bxs-error-circle")
+                    break;
+                default:
+                    break;
+            }
+            setTimeout(() => {
+                setShowAlert(false)
+            }, 4000);
+        }
+        else {
+            document.querySelector(".alert").classList.remove("active");
+            setTimeout(() => {
+                document.querySelector(".progress").classList.remove("active");
+            }, 3000);
+        }
+    }, [alertType, setAlertIconType, setShowAlert, showAlert])
+
     return (
-        <>
-            <div className="flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
-                <svg aria-hidden="true" className="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                <span className="sr-only">Info</span>
-                <div>
-                    <span className="font-medium">Info alert!</span> Change a few things up and try submitting again.
+        <div className="alert">
+            <div className="alert-content">
+                <i className={`bx ${alertIconType}`}></i>
+                <div className="message">
+                    <span className="text text-1">{alertType}</span>
+                    <span className="text text-2">{alertMessage}</span>
                 </div>
             </div>
-            <div className="flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-                <svg aria-hidden="true" className="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                <span className="sr-only">Info</span>
-                <div>
-                    <span className="font-medium">Danger alert!</span> Change a few things up and try submitting again.
-                </div>
-            </div>
-            <div className="flex p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                <svg aria-hidden="true" className="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                <span className="sr-only">Info</span>
-                <div>
-                    <span className="font-medium">Success alert!</span> Change a few things up and try submitting again.
-                </div>
-            </div>
-            <div className="flex p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
-                <svg aria-hidden="true" className="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                <span className="sr-only">Info</span>
-                <div>
-                    <span className="font-medium">Warning alert!</span> Change a few things up and try submitting again.
-                </div>
-            </div>
-            <div className="flex p-4 text-sm text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300" role="alert">
-                <svg aria-hidden="true" className="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                <span className="sr-only">Info</span>
-                <div>
-                    <span className="font-medium">Dark alert!</span> Change a few things up and try submitting again.
-                </div>
-            </div>
-        </>
+            <div className="progress "></div>
+        </div>
     )
 }
-
 export default Alert
