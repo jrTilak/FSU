@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=DM+Serif+Display&family=Montez&family=Roboto+Slab&family=Tinos&display=swap');
-/* 
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Cormorant Garamond', serif;
-font-family: 'DM Serif Display', serif;
-font-family: 'Montez', cursive;
-font-family: 'Roboto Slab', serif;
-font-family: 'Tinos', serif;
- */
 
 #hero-section {
     min-height: 80vh;
@@ -23,7 +15,16 @@ font-family: 'Tinos', serif;
 }
 
 h1 {
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+}
+
+h1.emp {
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.emp {
+    font-family: 'Montez', cursive;
 }
 
 h2,
@@ -31,5 +32,10 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+
     font-family: 'Cormorant Garamond', serif;
 }

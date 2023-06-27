@@ -15,7 +15,29 @@ const Footer = () => {
                     <span className="ml-3 text-xl">FSU</span>
                 </span>
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Created by-
-                    <span className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@jrTilak @anurag @utsab</span>
+                    <span className="text-gray-600 ml-1" rel="noopener noreferrer" >
+                        <a
+                            className="text-indigo-500 mx-2"
+                            href="https://www.facebook.com/jrTilak/"
+                            target="_blank"
+                        >
+                            @jrTilak
+                        </a>
+                        <a
+                            className="text-indigo-500 mr-2"
+                            href="https://www.facebook.com/utsab.pandey.96"
+                            target="_blank"
+                        >
+                            @utsab
+                        </a>
+                        <a
+                            className="text-indigo-500"
+                            href="https://www.facebook.com/anurag.dahal.73"
+                            target="_blank"
+                        >
+                            @blaze
+                        </a>
+                    </span>
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <Link href="https://www.facebook.com/fsu.ioeerc" className="text-gray-500 pr-2">

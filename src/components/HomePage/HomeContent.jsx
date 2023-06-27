@@ -53,8 +53,9 @@ const HomeContent = ({
           </div>
           <ButtonOrNot
             len={notices.length}
-            btnText="More news and posts..."
+            btnText="More notices and posts..."
             altText="No more posts"
+            type="notices"
           />
         </div>
       </ComponentSection>
@@ -66,7 +67,7 @@ const HomeContent = ({
                 if (index < 3) {
                   return (
                     <EventCard
-                      key={index}
+                      key={event.id}
                       title={event.title}
                       desc={event.desc}
                       date={event.date}
@@ -74,7 +75,7 @@ const HomeContent = ({
                       img={event.img}
                       eventDate={event.eventDate}
                       eventTime={event.eventTime}
-                      slug={index}
+                      slug={event.id}
                     />
                   )
                 }
@@ -85,6 +86,7 @@ const HomeContent = ({
             len={events.length}
             btnText="Explore more events..."
             altText="No more events"
+            type="events"
           />
         </div>
       </ComponentSection>
@@ -94,7 +96,7 @@ const HomeContent = ({
             <Gallery gallery={gallery} />
           </div>
           <div className="flex items-center justify-center mt-8">
-            <Link href="/events">
+            <Link href="/gallery">
               <button
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -104,7 +106,7 @@ const HomeContent = ({
         </div>
       </ComponentSection>
       <ComponentSection title="Contact Us">
-        <div className="flex flex-wrap -m-4  justify-center">
+        <div className="flex flex-wrap -m-4 justify-center">
           <Contact />
         </div>
       </ComponentSection>
