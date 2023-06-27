@@ -14,7 +14,6 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormData({ ...formData, submit_date: new Date().toLocaleString() });
-        console.log(formData);
         if (formData.message.trim() !== '') {
             emailjs.send(
                 'service_u9yrnxb',

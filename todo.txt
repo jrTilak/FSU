@@ -8,3 +8,4 @@ date in ad ni rakhna parxa obj ma
 explore le kaam gardian
 alert page le kaam gardaina
 bhatta dai ko name lamo vayo about ma
+make sure that all ar econtrolled input
