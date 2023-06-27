@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" async></script>
       </body>
     </html>
   )
