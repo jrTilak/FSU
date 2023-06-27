@@ -10,7 +10,7 @@ const Events = () => {
           className="sm:text-3xl text-2xl title-font text-gray-900 mt-5 font-semibold"
         >Upcoming Events</h1>
         <hr
-          className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"
+          className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-5 md:mb-8  dark:bg-gray-700"
         />
       </div>
       <div className="container px-5 py-6 mx-auto">
