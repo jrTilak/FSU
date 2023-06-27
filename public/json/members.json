@@ -1,25 +1,30 @@
 [
     {
         "name": "Saugat Bhattarai",
-        "fbLink":"https://www.facebook.com/saugat.bhattarai.549"
+        "fbLink":"https://www.facebook.com/saugat.bhattarai.549",
+        "post":" Vice President"
     },
     {
         "name": "Rajan Kumar Yadav",
-        "fbLink":" https://www.facebook.com/razzan.adhikari "
+        "fbLink":" https://www.facebook.com/razzan.adhikari ",
+        "post":" Secretary"
     },
     {
         "name": "Manohar Kumar Singh",
-        "fbLink":" https://www.facebook.com/manoharkumar.singh.37669 "
+        "fbLink":" https://www.facebook.com/manoharkumar.singh.37669 ",
+        "post":" Deputy Secretary"
     },
     {
         "name": "Maheshwar Prasad Bhatt",
         "contact": [
             "986887403",
             "9810689165"
+
         ],
         "email": "076bct045@ioepc.edu.np",
         "img": "/members/MaheshwarPrasadBhatt.jpg",
-        "fbLink":" https://www.facebook.com/maheshwarprashad.bhattmayalu "
+        "fbLink":" https://www.facebook.com/maheshwarprashad.bhattmayalu ",
+        "post":" Treasurer"
     },
     {
         "name": "Aayush Karki",
@@ -28,7 +33,8 @@
         ],
         "email": "077bel003@ioepc.edu.np",
         "img": "/members/AayushKarki.jpg",
-        "fbLink":"  https://www.facebook.com/karkig69"
+        "fbLink":"  https://www.facebook.com/karkig69",
+        "post":" Member"
     },
     {
         "name": "Purushottam Rijal",
@@ -37,7 +43,8 @@
         ],
         "email": "075bar032@ioepc.edu.np",
         "img": "/members/PurushottamRijal.jpg",
-        "fbLink":" https://www.facebook.com/purushottam.rijal.355 "
+        "fbLink":" https://www.facebook.com/purushottam.rijal.355 ",
+        "post":" Member"
     },
     {
         "name": "Sagar Bashyal",
@@ -46,7 +53,8 @@
         ],
         "email": "077bce070@ioepc.edu.np",
         "img": "/members/SagarBashyal.jpg",
-        "fbLink":" https://www.facebook.com/sagar.bashyal.775 "
+        "fbLink":" https://www.facebook.com/sagar.bashyal.775 ",
+        "post":" Member"
     },
     {
         "name": "Sejal Poddar",
@@ -55,11 +63,13 @@
         ],
         "email": "077bct076@ioepc.edu.np",
         "img": "/members/SejalPoddar.jpg",
-        "fbLink":" https://www.facebook.com/profile.php?id=100011662726935 "
+        "fbLink":" https://www.facebook.com/profile.php?id=100011662726935 ",
+        "post":" Member"
     },
     {
         "name": "Amir Karki",
-        "fbLink":" https://www.facebook.com/anoj.karki.1297 "
+        "fbLink":" https://www.facebook.com/anoj.karki.1297 ",
+        "post":" Member"
     },
     {
         "name": "Prasanga Dahal",
@@ -68,12 +78,14 @@
         ],
         "email": "076bct058@ioepc.edu.np",
         "img": "/members/PrasangaDahal.jpg",
-        "fbLink":" https://www.facebook.com/dahalprasanga.77 "
+        "fbLink":" https://www.facebook.com/dahalprasanga.77 ",
+        "post":" Member"
     },
     {
         "name": "Prabhab Katwal ",
         "img": "/members/PrabhabKatwal.jpg",
-        "fbLink":" https://www.facebook.com/ishaan.katwalii "
+        "fbLink":" https://www.facebook.com/ishaan.katwalii ",
+        "post":" Member"
     },
     {
         "name": "Manisha Karki",
@@ -82,7 +94,8 @@
         ],
         "email": "076bce040@ioepc.edu.np",
         "img": "/members/ManishaKarki.jpg",
-        "fbLink":" https://www.facebook.com/manisha.karki.98478 "
+        "fbLink":" https://www.facebook.com/manisha.karki.98478 ",
+        "post":" Member"
     },
     {
         "name": "Binita Gautam",
@@ -90,25 +103,31 @@
             "9846696331"
         ],
         "email": "076bel009@ioepc.edu.np",
-        "fbLink":"  https://www.facebook.com/binita.gautam.3705"
+        "img": "/members/BinitaGautam.jpg",
+        "fbLink":"  https://www.facebook.com/binita.gautam.3705",
+        "post":" Member"
     },
     {
         "name": "Ishwar Dahal",
-        "fbLink":"  https://www.facebook.com/ishordahal92"
+        "fbLink":"  https://www.facebook.com/ishordahal92",
+        "post":" Member"
     },
     {
         "name": "Karan Magar",
-        "fbLink":" https://www.facebook.com/karan.magar.165685 "
+        "fbLink":" https://www.facebook.com/karan.magar.165685 ",
+        "post":" Member"
     },
     {
         "name": "Kushal Pandit",
         "email": "076bme044@ioepc.edu.np",
         "img": "/members/KushalPandit.jpg",
-        "fbLink":"https://www.facebook.com/kushal.pandit.177  "
+        "fbLink":"https://www.facebook.com/kushal.pandit.177  ",
+        "post":" Member"
     },
     {
         "name": "Abhisekh Pangeni",
-        "fbLink":" https://www.facebook.com/abhishek.pangeni.50 "
+        "fbLink":" https://www.facebook.com/abhishek.pangeni.50 ",
+        "post":" Member"
     },
     {
         "name": "Sabin Dhital",
@@ -117,6 +136,7 @@
         ],
         "email": "077bce068@ioepc.edu.np",
         "img": "/members/SabinDhital.jpg",
-        "fbLink":" https://www.facebook.com/sabin.dhital.923 "
+        "fbLink":" https://www.facebook.com/sabin.dhital.923 ",
+        "post":" Member"
     }
 ]

@@ -84,7 +84,7 @@ const MemberDetail = ({ details }) => {
                                         />
                                         <div className="flex-grow">
                                             <h2 className="text-gray-900 title-font font-medium">{member.name}</h2>
-                                            <p className="text-gray-500">Member</p>
+                                            <p className="text-gray-500">{member.post}</p>
                                         </div>
                                     </div>
                                 </div>
