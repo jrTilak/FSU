@@ -3,7 +3,6 @@ import Post from '@/components/Post'
 import React from 'react'
 import notices from '../../../../../public/json/notices.json'
 import { usePathname } from 'next/navigation'
-import getEventStatus from '@/utils/getEventStatus'
 const Notice = () => {
     let path = usePathname()
     const regex = /\/(notices|events)\/([^/]+)/;

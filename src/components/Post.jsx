@@ -38,7 +38,12 @@ const Post = (props) => {
                                     </div>
                                     <div class="bg-white flex flex-col justify-start p-6">
                                         {
-                                            statusObj.status === "completed" ? "Happened" : "Happening"} On: {props.eventDate} {props.eventTime} {statusObj.daysLeft && `| ${statusObj.daysLeft} days Left`
+                                            statusObj.status &&
+                                            <>
+                                                {
+                                                    statusObj.status === "completed" ? "Happened" : "Happening"} On: {props.eventDate} {props.eventTime} {statusObj.daysLeft && `| ${statusObj.daysLeft} days Left`
+                                                }
+                                            </>
                                         }
                                         <h2 class="text-3xl font-bold hover:text-gray-700 pb-4">{elem.title}</h2>
                                         <p class="text-sm pb-8">
