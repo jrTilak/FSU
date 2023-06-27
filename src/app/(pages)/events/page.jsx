@@ -4,7 +4,7 @@ import events from "../../../../public/json/events.json";
 
 const Events = () => {
   return (
-    <section className="text-gray-600 body-font mt-16">
+    <section className="text-gray-600 body-font">
       <div className="flex flex-col text-center w-full">
         <h1
           className="sm:text-3xl text-2xl title-font text-gray-900 mt-5 font-semibold"

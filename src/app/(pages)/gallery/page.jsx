@@ -4,7 +4,7 @@ import React from 'react'
 const Gallery = () => {
   return (
     <>
-      <div className="flex flex-col text-center w-full  mt-16">
+      <div className="flex flex-col text-center w-full ">
         <h1
           className="text-[1.5rem] md:text-4xl title-font text-gray-900 mt-5 font-semibold "
         >Gallery</h1>

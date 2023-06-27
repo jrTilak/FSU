@@ -22,9 +22,11 @@ export default function RootLayout({ children }) {
         </head>
         <body className={inter.className}>
           <Navbar />
-          <Alert />
-          {children}
-          <Footer />
+          <div className='mt-16'>
+            <Alert />
+            {children}
+            <Footer />
+          </div>
         </body>
       </html>
     </GlobalContext>

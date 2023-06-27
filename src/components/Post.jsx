@@ -14,7 +14,7 @@ const Post = (props) => {
 
     }
     return (
-        <div class="container mx-auto flex flex-wrap py-6 mt-16 max-w-6xl">
+        <div class="container mx-auto flex flex-wrap py-6 max-w-6xl">
             <section class="w-full md:w-2/3 flex flex-col items-center px-3">
                 {props.arr.map((elem) => {
                     if (elem.id === props.id) {
