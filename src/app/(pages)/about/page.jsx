@@ -18,7 +18,7 @@ const About = () => {
                     title="Our Works"
                     desc=" We at IOE Purwanchal Campus Dharan are committed to promoting the rights and interests of students. We work to improve the quality of education  and protect the rights of students on campus. We are also involved in social and political activism, having campaigned for issues such as democracy, human rights, and environmental protection. We envision a campus where all students have the opportunity to achieve their full potential and are free to learn, participate in democratic processes, and make a positive contribution to society. We achieve this through a variety of activities, including providing scholarships and financial assistance to students, organizing protests and demonstrations on issues such as democracy, human rights, and environmental protection, advocating for the rights of students on campus, promoting the quality of education, and organizing cultural and sports events."
                     float="left"
-                    headingCss="text-end"
+                    headingCss="md:text-end"
                     img="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/350144309_767633088435971_535668615214684963_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Ib4StNE4shcAX9ROEAL&_nc_ht=scontent.fbir1-1.fna&oh=00_AfDzgRmXbd4g2ZqHjl8nPTkH2mUXTjw-NpVHGvIEBbBk0w&oe=649F6A82"
                 />
             </div>
