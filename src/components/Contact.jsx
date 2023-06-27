@@ -7,19 +7,28 @@ const Contact = () => {
     const [formData, setFormData] = useState({
         from_name: '',
         reply_to: '',
-        message: ''
+        message: '',
+        submit_date: new Date().toLocaleString()
     });
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setFormData({ ...formData, submit_date: new Date().toLocaleString() });
+        console.log(formData);
         if (formData.message.trim() !== '') {
-            emailjs.send('service_u9yrnxb', 'template_ilskbae', formData, "4OLqdexocj5-pNRvS")
+            emailjs.send(
+                'service_u9yrnxb',
+                'template_ilskbae',
+                formData,
+                "4OLqdexocj5-pNRvS"
+            )
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     setFormData({
                         from_name: '',
                         reply_to: '',
-                        message: ''
+                        message: '',
+                        submit_date: new Date().toLocaleString()
                     })
                 }, function (error) {
                     console.log('FAILED...', error);
@@ -28,7 +37,6 @@ const Contact = () => {
         else {
             console.error("Field is empty");
         }
-        console.log(formData);
     };
 
     const handleChange = (e) => {
@@ -60,9 +68,9 @@ const Contact = () => {
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                            <a className="text-indigo-500 leading-relaxed">fsu.erc@ioepc.edu.np</a>
+                            <a href="mailto:fsu.erc@ioepc.edu.np" className="text-indigo-500 leading-relaxed">fsu.erc@ioepc.edu.np</a>
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                            <p className="leading-relaxed">123-456-7890</p>
+                            <a href="tel:9804368740" className="leading-relaxed text-indigo-500">9804368740</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +78,7 @@ const Contact = () => {
                     className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
                     onSubmit={handleSubmit}
                 >
-                    <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Mail Us:</h2>
+                    <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Contact Us:</h2>
                     <p className="leading-relaxed mb-5 text-gray-600">Leave us a message</p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>

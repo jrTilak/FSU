@@ -40,7 +40,7 @@ const Hero = () => {
                             <Link href="#hero-btn">
                                 <button className="bg-white text-blue-600 px-6 py-2 hover:brightness-50 font-semibold">Explore</button>
                             </Link>
-                            <Link href="#contact">
+                            <Link href="/contact">
                                 <button
                                     className="bg-blue-900 text-white border-2 border-white px-6 py-2 hover:brightness-50 font-semibold">Contact Us</button>
                             </Link>
