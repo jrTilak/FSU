@@ -64,10 +64,10 @@ const Complain = () => {
   }
   return (
     <section className="text-gray-600 body-font relative">
-      <div className="container px-5 py-16 mx-auto">
+      <div className="container px-5 pb-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Complain Form</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-justify">Please use this form to submit a complaint or report any issues you have encountered. We value your feedback and strive to address your concerns promptly and fairly. Thank you for your contribution.</p>
+          <h1 className="text-[1.5rem] md:text-4xl title-font text-gray-900 mt-5 font-semibold">Complain Form</h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">Please use this form to submit a complaint or report any issues you have encountered. We value your feedback and strive to address your concerns promptly and fairly. Thank you for your contribution.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
