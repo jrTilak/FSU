@@ -3,7 +3,8 @@ const nextConfig = {
     images: {
         domains: [
             'scontent.fbir1-1.fna.fbcdn.net',
-            'beforeigosolutions.com'
+            'beforeigosolutions.com',
+            'i.ibb.co'
         ],
     },
 }

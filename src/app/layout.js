@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
           <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
         </head>
         <body className={inter.className}>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0&appId=221968167448554&autoLogAppEvents=1" nonce="UadT3GjB"></script>
           <Navbar />
           <div className='mt-16'>
             <Alert />

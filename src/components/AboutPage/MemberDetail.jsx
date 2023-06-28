@@ -16,7 +16,7 @@ const MemberDetail = ({ details }) => {
                         <div className="imageContainer flex items-center w-32 h-32 md:w-60 md:h-60 relative m-4">
                             <Image
                                 className="rounded-full border-2 border-neutral-900"
-                                src="/members/NabinShrestha.jpg"
+                                src="https://i.ibb.co/Mg7Hk7v/Nabin-Shrestha.jpg"
                                 alt="image description"
                                 fill="cover"
                             />
@@ -77,7 +77,7 @@ const MemberDetail = ({ details }) => {
                                     <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                                         <Image
                                             className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                                            alt="team"
+                                            alt={member.name}
                                             src={member.img ? member.img : 'https://beforeigosolutions.com/wp-content/uploads/2021/12/dummy-profile-pic-300x300-1.png'}
                                             width={80}
                                             height={80}
