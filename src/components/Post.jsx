@@ -14,17 +14,17 @@ const Post = (props) => {
 
     }
     return (
-        <div class="container mx-auto flex flex-wrap py-6 max-w-6xl">
-            <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+        <div className="container mx-auto flex flex-wrap py-6 max-w-6xl">
+            <section className="w-full md:w-2/3 flex flex-col items-center px-3">
                 {props.arr.map((elem) => {
                     if (elem.id === props.id) {
                         return (
                             <>
-                                <article class="flex flex-col shadow my-4">
+                                <article key={elem.id} className="flex flex-col shadow my-4">
                                     {
                                         statusObj.status &&
                                         <span
-                                            class="bg-red-100 text-red-800 text-base uppercase z-20 font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300 rounded-tl-none rounded-br-none rounded-tr-lg rounder-bl-lg absolute">
+                                            className="bg-red-100 text-red-800 text-base uppercase z-20 font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300 rounded-tl-none rounded-br-none rounded-tr-lg rounder-bl-lg absolute">
                                             {statusObj.status}
                                         </span>
                                     }
@@ -36,7 +36,7 @@ const Post = (props) => {
                                             height={300}
                                             width={800} />
                                     </div>
-                                    <div class="bg-white flex flex-col justify-start p-6">
+                                    <div className="bg-white flex flex-col justify-start p-6">
                                         {
                                             statusObj.status &&
                                             <>
@@ -45,8 +45,8 @@ const Post = (props) => {
                                                 }
                                             </>
                                         }
-                                        <h2 class="text-3xl font-bold hover:text-gray-700 pb-4">{elem.title}</h2>
-                                        <p class="text-sm pb-8">
+                                        <h2 className="text-3xl font-bold hover:text-gray-700 pb-4">{elem.title}</h2>
+                                        <p className="text-sm pb-8">
                                             Published on {elem.date} | {elem.time}
                                         </p>
                                         <p>
@@ -62,10 +62,10 @@ const Post = (props) => {
             </section>
 
             {/* <!-- Sidebar Section --> */}
-            <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
-                <div class="w-full bg-white shadow flex flex-col my-4 p-6">
-                    <p class="text-xl font-semibold pb-5 uppercase">Recent {props.type}</p>
-                    <div class="flex flex-wrap items-center justify-evenly gap-2">
+            <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
+                <div className="w-full bg-white shadow flex flex-col my-4 p-6">
+                    <p className="text-xl font-semibold pb-5 uppercase">Recent {props.type}</p>
+                    <div className="flex flex-wrap items-center justify-evenly gap-2">
                         {
                             props.arr.map((elem) => {
                                 return (
@@ -86,7 +86,7 @@ const Post = (props) => {
                         }
                     </div>
                     <Link href={`/${props.type}`}
-                        class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                        className="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
                         Know More
                     </Link>
                 </div>
