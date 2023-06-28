@@ -17,13 +17,20 @@ export default function RootLayout({ children }) {
     <GlobalContext>
       <html lang="en">
         <head>
-          <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+          <link
+            rel="shortcut icon"
+            href="./favicon.ico"
+            type="image/x-icon"
+          />
+          <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'
+          />
         </head>
         <body
           className={inter.className}>
           <Navbar />
-          <div className='mt-16'>
+          <div className='mt-[3.6rem]'>
             <Alert />
             {children}
             <Footer />

@@ -19,6 +19,8 @@ const GlobalContext = ({ children }) => {
         setAlertMessage(message)
     }
 
+
+
     return (
         <Context.Provider
             value={
@@ -31,6 +33,7 @@ const GlobalContext = ({ children }) => {
                     isSubmitting, setIsSubmitting
                 }
             }
+
         >
             {children}
         </Context.Provider>

@@ -3,25 +3,20 @@ const getEventStatus = (event_date, event_time) => {
     const currentDatetime = new Date();
     const eventDatetime = new Date(`${event_date} ${event_time}`);
 
-    // Check if the event has already happened
-    if (currentDatetime > eventDatetime) {
-        return {
-            status: "completed",
-            daysLeft: null
-        };
-    }
-
     // Calculate the number of days left until the event
     const timeDiff = eventDatetime.getTime() - currentDatetime.getTime();
     const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    console.log(daysLeft);
 
-    // Determine the status based on the current date
-    const today = new Date().setHours(0, 0, 0, 0);
-    const eventDate = eventDatetime.setHours(0, 0, 0, 0);
-
-    if (eventDate === today) {
+    if (daysLeft === 0) {
         return {
             status: "today",
+            daysLeft: null
+        };
+    }
+    else if (currentDatetime > eventDatetime) {
+        return {
+            status: "completed",
             daysLeft: null
         };
     }

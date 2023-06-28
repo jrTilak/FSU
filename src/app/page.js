@@ -19,7 +19,6 @@ export default function Home() {
         events={events}
         gallery={gallery}
       />
-
     </>
   )
 }

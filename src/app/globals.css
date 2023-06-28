@@ -3,10 +3,6 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=DM+Serif+Display&family=Montez&family=Roboto+Slab&family=Tinos&display=swap');
 
-#hero-section {
-    min-height: 80vh;
-}
-
 
 * {
     scroll-behavior: smooth;

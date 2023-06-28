@@ -8,7 +8,9 @@ const EventCard = ({ title, desc, img, date, time, eventDate, eventTime, slug })
         <div className="p-4 md:w-1/3 relative">
             <span
                 className="uppercase bg-red-100 text-red-800 text-xs z-20 font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300 rounded-tl-lg rounded-br-lg rounded-tr-none rounder-bl-none absolute"
-            >{status}</span>
+            >
+                {status}
+            </span>
             <div
                 className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:bg-slate-100"
             >
