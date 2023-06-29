@@ -18,5 +18,4 @@ const ComponentSection = (props) => {
         </section >
     )
 }
-
 export default ComponentSection

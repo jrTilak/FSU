@@ -4,7 +4,11 @@ import { useGlobalContext } from "./../app/GlobalContext"
 import "./alert.css"
 
 const Alert = () => {
-    const { showAlert, setShowAlert, alertType, alertMessage, alertIconType, setAlertIconType } = useGlobalContext()
+    const {
+        showAlert, setShowAlert,
+        alertType, alertMessage,
+        alertIconType, setAlertIconType
+    } = useGlobalContext()
     useEffect(() => {
         if (showAlert) {
             document.querySelector(".progress").classList.add("active");
@@ -45,10 +49,20 @@ const Alert = () => {
     return (
         <div className="alert">
             <div className="alert-content">
-                <i className={`bx ${alertIconType}`}></i>
+                <i
+                    className={`bx ${alertIconType}`}
+                />
                 <div className="message">
-                    <span className="text text-1">{alertType}</span>
-                    <span className="text text-2">{alertMessage}</span>
+                    <span
+                        className="text text-1"
+                    >
+                        {alertType}
+                    </span>
+                    <span
+                        className="text text-2"
+                    >
+                        {alertMessage}
+                    </span>
                 </div>
             </div>
             <div className="progress "></div>

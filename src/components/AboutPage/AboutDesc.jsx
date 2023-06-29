@@ -11,10 +11,15 @@ const AboutFSU = (props) => {
                     className="container mx-auto flex px-5 max-w-6xl md:flex-row flex-col items-center "
                 >
                     <div
-                        className="lg:flex-grow flex flex-col md:items-start md:text-left md:mb-0 items-center text-center sm:m-2 md:m-4 lg:m-12 "
+                        className="lg:flex-grow flex flex-col md:items-start md:text-left md:mb-0 items-center text-center sm:m-2 "
+                        style={
+                            {
+                                marginTop: '1rem'
+                            }
+                        }
                     >
                         <h1
-                            className={` title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900 underline underline-offset-4 xs:text-center w-[100%] ${props.headingCss}`}
+                            className={` title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900 underline underline-offset-4 xs:text-center w-[100%] sm:mt-4 md:mt-0 ${props.headingCss}`}
                         >{props.title}</h1>
                         <div>
                             <div
