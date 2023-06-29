@@ -11,15 +11,11 @@ const GlobalContext = ({ children }) => {
     const [alertIconType, setAlertIconType] = useState("")
     const [isSubmitting, setIsSubmitting] = useState(false)
 
-
-
     const handleAlert = (type, message) => {
         setShowAlert(true)
         setAlertType(type)
         setAlertMessage(message)
     }
-
-
 
     return (
         <Context.Provider
