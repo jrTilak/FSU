@@ -7,7 +7,7 @@ const Hero = () => {
         <>
             <div
                 id="hero-section"
-                className="min-h[80vh] flex justify-center bg-[url('../../public/images/allMembers.jpg')] bg-no-repeat bg-center bg-cover p-5 md:p-16 md:pt-8 bg-neutral-800/60 bg-blend-multiply"
+                className="min-h-[80vh] flex justify-center bg-[url('../../public/images/allMembers.jpg')] bg-no-repeat bg-center bg-cover p-5 md:p-16 md:pt-8 bg-neutral-800/60 bg-blend-multiply"
             >
                 <div className="flex flex-col justify-between  max-w-7xl  text-white items-center z-10">
                     <div className="flex flex-col items-center">
