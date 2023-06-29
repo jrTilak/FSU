@@ -6,7 +6,7 @@ const getEventStatus = (event_date, event_time) => {
     // Calculate the number of days left until the event
     const timeDiff = eventDatetime.getTime() - currentDatetime.getTime();
     const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    console.log(daysLeft);
+
 
     if (daysLeft === 0) {
         return {
