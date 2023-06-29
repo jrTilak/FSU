@@ -7,7 +7,6 @@
 
 ## Website Link
 [https://fsuerc.netlify.app/](https://fsuerc.netlify.app/)
-n
 
 ### Introduction
 Welcome to the FSU Free Student Union IOE ERC Nepal website! This website has been developed as part of a
