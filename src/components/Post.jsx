@@ -4,14 +4,15 @@ import Link from 'next/link'
 import getEventStatus from '@/utils/getEventStatus'
 
 const Post = (props) => {
+    let eventObj = {}
     let statusObj = {}
     if (props.type === 'events') {
         props.arr.map((elem) => {
             if (elem.id === props.id) {
                 statusObj = getEventStatus(elem.eventDate, elem.eventTime)
+                eventObj = elem
             }
         })
-
     }
     return (
         <div className="container mx-auto flex flex-wrap py-6 max-w-6xl">
@@ -41,7 +42,19 @@ const Post = (props) => {
                                             statusObj.status &&
                                             <>
                                                 {
-                                                    statusObj.status === "completed" ? "Happened" : "Happening"} On: {props.eventDate} {props.eventTime} {statusObj.daysLeft && `| ${statusObj.daysLeft} days Left`
+                                                    statusObj.status === "completed" ? "Happened" : "Happening"
+                                                }
+                                                &nbsp;
+                                                On:
+                                                &nbsp;
+                                                {eventObj.eventDate}
+                                                &nbsp;&nbsp;
+                                                {eventObj.eventTime}
+                                                {
+                                                    statusObj.daysLeft &&
+                                                    <>
+                                                        &nbsp;| {statusObj.daysLeft} days Left
+                                                    </>
                                                 }
                                             </>
                                         }
