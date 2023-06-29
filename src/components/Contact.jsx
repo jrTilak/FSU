@@ -3,7 +3,6 @@
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import { useGlobalContext } from "@/app/GlobalContext";
-import { set } from "mongoose";
 
 const Contact = () => {
     const { handleAlert, isSubmitting, setIsSubmitting } = useGlobalContext()
