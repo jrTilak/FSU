@@ -6,12 +6,12 @@
 - [Anurag Dahal](https://github.com/AnuragDahal)
 
 ## Website Link
-[https://fsuerc.netlify.app/](https://fsuerc.netlify.app/)
+[https://fsu.vercel.app/](https://fsu.vercel.app/)
 n
 
 ### Introduction
 Welcome to the FSU Free Student Union IOE ERC Nepal website! This website has been developed as part of a
- ````web development competition```` and serves as an online platform for the FSU (Free Student Union) of IOE ERC Nepal. The website is built using Next.js, React.js, Tailwind CSS, and Email.js, ensuring a seamless and responsive user experience.
+web development competition```` and serves as an online platform for the FSU (Free Student Union) of IOE ERC Nepal. The website is built using Next.js, React.js, Tailwind CSS, and Email.js, ensuring a seamless and responsive user experience.
 
 ### Key Features and Functionality
 The FSU Free Student Union website offers a range of features and functionalities to provide information and facilitate communication. Here are some highlights:
