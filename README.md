@@ -7,8 +7,6 @@
 
 ## Website Link
 [https://fsu.vercel.app/](https://fsu.vercel.app/)
-n
-
 ### Introduction
 Welcome to the FSU Free Student Union IOE ERC Nepal website! This website has been developed as part of a
 web development competition```` and serves as an online platform for the FSU (Free Student Union) of IOE ERC Nepal. The website is built using Next.js, React.js, Tailwind CSS, and Email.js, ensuring a seamless and responsive user experience.
