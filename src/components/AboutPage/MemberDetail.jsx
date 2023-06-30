@@ -177,7 +177,7 @@ const MemberDetail = ({ details }) => {
                                         />
                                         <div className="flex-grow">
                                             <h2
-                                                className="text-gray-900 title-font font-medium"
+                                                className="text-gray-900 title-font font-medium w-[90%]"
                                             >
                                                 {member.name}
                                             </h2>
