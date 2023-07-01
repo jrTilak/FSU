@@ -17,12 +17,13 @@ const Contact = () => {
         e.preventDefault();
         setFormData({ ...formData, submit_date: new Date().toLocaleString() });
         if (formData.message.trim() !== '') {
+            console.log(process.env.NEXT_PUBLIC_EMAILJS__SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS__CONTACT__FORM_ID, process.env.NEXT_PUBLIC_EMAILJS__PUBLIC__KEY);
             setIsSubmitting(true)
             emailjs.send(
-                'service_u9yrnxb',
-                'template_ilskbae',
+                process.env.NEXT_PUBLIC_EMAILJS__SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS__CONTACT__FORM_ID,
                 formData,
-                "4OLqdexocj5-pNRvS"
+                process.env.NEXT_PUBLIC_EMAILJS__PUBLIC__KEY
             )
                 .then(function () {
                     handleAlert("success", "Thanks for contacting us. We'll get back to you soon.")

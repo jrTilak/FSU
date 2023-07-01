@@ -37,10 +37,10 @@ const Complain = () => {
     if (formData.desc.trim() !== '') {
       setIsSubmitting(true)
       emailjs.send(
-        'service_u9yrnxb',
-        'template_on4bslw',
+        process.env.NEXT_PUBLIC_EMAILJS__SERVICE_ID,
+        NEXT_PUBLIC_EMAILJS__COMPLAIN__FORM_ID,
         formData,
-        '4OLqdexocj5-pNRvS'
+        process.env.NEXT_PUBLIC_EMAILJS__PUBLIC__KEY
       )
         .then(function () {
           handleAlert("success", "Thanks!, We'll get back to you soon.")
