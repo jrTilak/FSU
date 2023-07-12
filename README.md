@@ -17,7 +17,7 @@ NEXT_PUBLIC_EMAILJS__PUBLIC__KEY = your_key
 ```
 ### Introduction
 Welcome to the FSU Free Student Union IOE ERC Nepal website! This website has been developed as part of a
-web development competition```` and serves as an online platform for the FSU (Free Student Union) of IOE ERC Nepal. The website is built using Next.js, React.js, Tailwind CSS, and Email.js, ensuring a seamless and responsive user experience.
+``web development competition`` which is supposed to serve as an online platform for the FSU (Free Student Union) of IOE ERC Nepal. The website is built using Next.js, React.js, Tailwind CSS, and Email.js, ensuring a seamless and responsive user experience.
 
 ### Key Features and Functionality
 The FSU Free Student Union website offers a range of features and functionalities to provide information and facilitate communication. Here are some highlights:
@@ -56,3 +56,14 @@ The FSU Free Student Union website is built using the following technologies:
 
 ### Conclusion
 We invite you to explore the FSU Free Student Union IOE ERC Nepal website and take advantage of its various features and functionalities. Feel free to use the contact form to reach out to the FSU, provide feedback, or submit any inquiries. Stay informed about the FSU's activities by checking out the recent notices, news, and events sections. We hope you find the website informative, engaging, and a valuable resource for all your FSU-related needs!
+
+# Competition Update:
+Team Error 404: ``Third Runner Up``
+<div>
+<img src="public\certificates\photo_2023-07-12_17-29-28.jpg" alt="">
+<img src="public\certificates\photo_2023-07-12_17-29-28 (2).jpg" alt="">
+<img src="public\certificates\photo_2023-07-12_17-29-28 (3).jpg" alt="">
+</div>
+
+## See other participants:
+[https://github.com/aces-erc/Web-Design-Competition-2080](https://github.com/aces-erc/Web-Design-Competition-2080)
