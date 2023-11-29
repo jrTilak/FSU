@@ -92,7 +92,7 @@ NEXT_PUBLIC_EMAILJS__PUBLIC__KEY = your_key
 We invite you to explore the FSU Free Student Union IOE ERC Nepal website and take advantage of its various features and functionalities. Feel free to use the contact form to reach out to the FSU, provide feedback, or submit any inquiries. Stay informed about the FSU's activities by checking out the recent notices, news, and events sections. We hope you find the website informative, engaging, and a valuable resource for all your FSU-related needs!
 
 # Competition Update:
-Team Error 404: ``Third Runner Up``
+Team Error 404: ``Second Runner Up``
 <div>
 <img src="public\certificates\photo_2023-07-12_17-29-28.jpg" alt="">
 <img src="public\certificates\photo_2023-07-12_17-29-28 (2).jpg" alt="">
